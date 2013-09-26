@@ -6,14 +6,50 @@ nav_trans_time = .5s
 footer_trans_time = .5s
 
 body
-  overflow hidden
+  overflow scroll
   background-color background-color
+
+#title_name
+  position fixed
+  top 0px
+  left 160px
+  width 100%
+  z-index 10
+  padding 5px
+  color rgb(50,50,50)
+  background rgb(225,225,225)
+  font-size 250%
+  font-family Molot
+
+#navigation
+  postion fixed
+  top 0px
+  left 500px
+  z-index 10
+  width 150px
+  background rgb(225,225,225)
+div#navigation
+  text-align left
+  padding 5px
+  font-size 125%
+  font-family Molot
+span#navigation
+  position absolute
+  bottom 0
+  background rgb(0,0,0)
+  
+#content
+  position absolute
+  top 50px
+  left 165px
+#content p
+  font-size 250%
+  font-family GoodDog
 
 footer
   position fixed
   bottom 0
   width 100%
-  z-index 0
   background rgb(255,255,255)
   padding-left 40%
   font-size 100%
@@ -30,50 +66,6 @@ footer
     padding-left 0%
 #footer_inner
   position relative
-#navigation
-  postion absolute
-  text-align right
-  top 0
-  left 0
-  min-height 1000px
-  width 200px
-  z-index 10
-  background rgb(225,225,225)
-  padding 5px
-  font-size 125%
-  font-family Molot
-
-#navigation_left
-  postion absolute
-  text-align left
-  top 0
-  right 0
-  min-height 1000px
-  width 200px
-  color rgb(50,50,50)
-  background rgb(200,200,200)
-  padding 5px
-  font-size 125%
-  font-family Molot
-  transition-propert width
-  transition-duration nav_trans_time
-  -moz-transition-property width
-  -moz-transition-duration nav_trans_time
-  -webkit-transition-property width
-  -webkit-transition-duration nav_trans_time
-  -o-transition-property width
-  -o-transition-duration nav_trans_time
-  &:hover
-    width 56px
-  
-#title_name
-  position fixed
-  top 0px
-  left 215px
-  z-index 10
-  color rgb(50,50,50)
-  font-size 250%
-  font-family Molot
 
 /*
  * Fonts

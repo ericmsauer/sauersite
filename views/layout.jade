@@ -7,22 +7,28 @@ html
   body
     block title
     div#navigation
-      p holas
-      nav#navigation_left
+      div
+        img(src='/pictures/me.tif')
         ul
           li
+            img(src='/pictures/home_button.tif')
             a(href='/') Home
           li
+            img(src='/pictures/projects_button.tif')
             a(href='/projects') Projects
           li
+            img(src='/pictures/resume_button.tif')
             a(href='/resume') Resume
           li
+            img(src='/pictures/aboutme_button.tif')
             a(href='/about') About Me
-          img(src='/pictures/twitter_button.tif')
-          img(src='/pictures/facebook_button.tif')
-          img(src='/pictures/googleplus_button.tif')
-  footer
-    div#footer_inner
-      p Created by: Eric Sauer 
-      p Using Node.js along with express
-      p All JADE/STYLUS(HTML/CSS) written by hand
+      span
+        img(src='/pictures/twitter_button.tif')
+        img(src='/pictures/facebook_button.tif')
+        img(src='/pictures/googleplus_button.tif')
+    block content
+    footer
+      div#footer_inner
+        p Created by: Eric Sauer 
+        p Using Node.js along with express
+        p All JADE/STYLUS(HTML/CSS) written by hand
