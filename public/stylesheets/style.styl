@@ -1,0 +1,87 @@
+@import 'nib'
+global-reset()
+
+background-color = rgb(150,150,255)
+nav_trans_time = .5s
+footer_trans_time = .5s
+
+body
+  overflow hidden
+  background-color background-color
+
+footer
+  position fixed
+  bottom 0
+  width 100%
+  z-index 0
+  background rgb(255,255,255)
+  padding-left 40%
+  font-size 100%
+  font-family Molot
+  transition-propert padding-left
+  transition-duration nav_trans_time
+  -moz-transition-property padding-left
+  -moz-transition-duration nav_trans_time
+  -webkit-transition-property padding-left
+  -webkit-transition-duration nav_trans_time
+  -o-transition-property padding-left
+  -o-transition-duration nav_trans_time
+  &:hover
+    padding-left 0%
+#footer_inner
+  position relative
+#navigation
+  postion absolute
+  text-align right
+  top 0
+  left 0
+  min-height 1000px
+  width 200px
+  z-index 10
+  background rgb(225,225,225)
+  padding 5px
+  font-size 125%
+  font-family Molot
+
+#navigation_left
+  postion absolute
+  text-align left
+  top 0
+  right 0
+  min-height 1000px
+  width 200px
+  color rgb(50,50,50)
+  background rgb(200,200,200)
+  padding 5px
+  font-size 125%
+  font-family Molot
+  transition-propert width
+  transition-duration nav_trans_time
+  -moz-transition-property width
+  -moz-transition-duration nav_trans_time
+  -webkit-transition-property width
+  -webkit-transition-duration nav_trans_time
+  -o-transition-property width
+  -o-transition-duration nav_trans_time
+  &:hover
+    width 56px
+  
+#title_name
+  position fixed
+  top 0px
+  left 215px
+  z-index 10
+  color rgb(50,50,50)
+  font-size 250%
+  font-family Molot
+
+/*
+ * Fonts
+ */
+@font-face
+  font-family GoodDog
+  src url(/fonts/GoodDog.otf) format('truetype')
+@font-face
+  font-family Molot
+  src url(/fonts/Molot.otf) format('truetype')
+

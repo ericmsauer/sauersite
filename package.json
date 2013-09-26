@@ -1,0 +1,20 @@
+{
+  "name": "SauerSite",
+  "description": "My first website for publication purposes",
+  "author": "Eric Sauer <support@ericsauer.com>",
+  "version": "0.1.0",
+  "dependencies": {
+    "express":"3.x",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  }
+}

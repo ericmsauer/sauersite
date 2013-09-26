@@ -1,0 +1,28 @@
+!!!5
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/javascript/script.js')
+  body
+    block title
+    div#navigation
+      p holas
+      nav#navigation_left
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/projects') Projects
+          li
+            a(href='/resume') Resume
+          li
+            a(href='/about') About Me
+          img(src='/pictures/twitter_button.tif')
+          img(src='/pictures/facebook_button.tif')
+          img(src='/pictures/googleplus_button.tif')
+  footer
+    div#footer_inner
+      p Created by: Eric Sauer 
+      p Using Node.js along with express
+      p All JADE/STYLUS(HTML/CSS) written by hand
