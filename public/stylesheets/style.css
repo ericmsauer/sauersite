@@ -89,9 +89,16 @@ td {
 a img {
   border: none;
 }
+html {
+  height: 100%;
+}
 body {
-  overflow: scroll;
-  background-color: #9696ff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fafafa;
 }
 #title_name {
   position: fixed;
@@ -100,34 +107,58 @@ body {
   width: 100%;
   z-index: 10;
   padding: 5px;
-  color: #323232;
-  background: #e1e1e1;
+  color: #4b4b4b;
+  background: #7d7d7d;
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 15px 2px 15px 0px #000;
+  box-shadow: 15px 2px 15px 0px #000;
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
   font-size: 250%;
   font-family: Molot;
 }
 #navigation {
-  postion: fixed;
+  position: fixed;
   top: 0px;
-  left: 500px;
-  z-index: 10;
+  left: 0px;
+  z-index: 9;
   width: 150px;
-  background: #e1e1e1;
+  height: 100%;
+  padding: 0 15px 0 15px;
+  background: #7d7d7d;
+  -webkit-box-shadow: 5px 0 25px 0px #000;
+  box-shadow: 5px 0 25px 0px #000;
+  border-right: 1px solid #000;
 }
 div#navigation {
   text-align: left;
   padding: 5px;
-  font-size: 125%;
-  font-family: Molot;
 }
-span#navigation {
+#navigation_text {
+  height: 50px;
+}
+#navigation_text a:link {
+  color: #4b4b4b;
+  font-family: Molot;
+  font-size: 150%;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+#navigation_text a:visited {
+  color: #4b4b4b;
+}
+#navigation_text a:hover {
+  color: #969696;
+}
+#navigation_buttons {
   position: absolute;
-  bottom: 0;
-  background: #000;
+  bottom: 25px;
 }
 #content {
   position: absolute;
+  width: 100%;
   top: 50px;
-  left: 165px;
+  left: 161px;
+  margin-left: 10px;
 }
 #content p {
   font-size: 250%;
@@ -138,6 +169,7 @@ footer {
   bottom: 0;
   width: 100%;
   background: #fff;
+  border: 1px solid #000;
   padding-left: 40%;
   font-size: 100%;
   font-family: Molot;
@@ -159,6 +191,38 @@ footer:hover {
 }
 #footer_inner {
   position: relative;
+}
+/*
+ * Index
+ */
+div#column1 {
+  position: fixed;
+  height: 100;
+  width: 100;
+  left: 180;
+  top: 100;
+  border: 1px solid #000;
+}
+div#column2 {
+  position: absolute;
+  height: 100;
+  width: 100;
+  left: 100;
+  top: 0;
+  border: 1px solid #000;
+}
+/*
+ * Images
+ */
+div#me_picture {
+  height: 130;
+  width: 130;
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  padding-bottom: -5px;
+  border: 2px solid #000;
 }
 /*
  * Fonts

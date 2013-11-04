@@ -8,27 +8,29 @@ html
     block title
     div#navigation
       div
-        img(src='/pictures/me.tif')
-        ul
-          li
-            img(src='/pictures/home_button.tif')
-            a(href='/') Home
-          li
-            img(src='/pictures/projects_button.tif')
-            a(href='/projects') Projects
-          li
-            img(src='/pictures/resume_button.tif')
-            a(href='/resume') Resume
-          li
-            img(src='/pictures/aboutme_button.tif')
-            a(href='/about') About Me
-      span
-        img(src='/pictures/twitter_button.tif')
-        img(src='/pictures/facebook_button.tif')
-        img(src='/pictures/googleplus_button.tif')
+        div#me_picture
+          img(src='/pictures/me.jpg')
+        div#navigation_text
+          a(href='/')
+            img(src='/pictures/home_button.jpg' href='/')
+          a(href='/') Home
+        div#navigation_text
+          a(href='/projects')
+            img(src='/pictures/projects_button.jpg')
+          a(href='/projects') Projects
+        div#navigation_text
+          a(href='/resume')
+            img(src='/pictures/resume_button.jpg')
+          a(href='/resume') Resume
+        div#navigation_text
+          a(href='/about')
+            img(src='/pictures/aboutme_button.jpg')
+          a(href='/about') About Me
+      div#navigation_buttons
+        a(href="/facebook")
+          img(src='/pictures/facebook_button_engraving.jpg')
+        a(href="/twitter")
+          img(src='/pictures/twitter_button_engraving.jpg')
+        a(href="/google")
+          img(src='/pictures/googleplus_button_engraving.jpg')
     block content
-    footer
-      div#footer_inner
-        p Created by: Eric Sauer 
-        p Using Node.js along with express
-        p All JADE/STYLUS(HTML/CSS) written by hand

@@ -1,12 +1,24 @@
 @import 'nib'
 global-reset()
 
-background-color = rgb(150,150,255)
+// Content
+background-color = rgb(250,250,250)
+// Navigation
+navigation-color = rgb(125,125,125)
+navigation-text-color = rgb(75,75,75)
+navigation-text-hover-color = rgb(150,150,150)
 nav_trans_time = .5s
 footer_trans_time = .5s
 
+html
+  height 100%
+
 body
-  overflow scroll
+  overflow-y scroll
+  overflow-x hidden
+  margin 0
+  padding 0
+  height 100%
   background-color background-color
 
 #title_name
@@ -16,32 +28,50 @@ body
   width 100%
   z-index 10
   padding 5px
-  color rgb(50,50,50)
-  background rgb(225,225,225)
+  color navigation-text-color
+  background navigation-color
+  border-bottom 1px solid rgb(0,0,0)
+  box-shadow 15px 2px 15px 0px rgb(0,0,0);
+  text-shadow: 0px 1px 0px rgba(255,255,255,.5);
   font-size 250%
   font-family Molot
 
 #navigation
-  postion fixed
+  position fixed
   top 0px
-  left 500px
-  z-index 10
+  left 0px
+  z-index 9
   width 150px
-  background rgb(225,225,225)
+  height 100%
+  padding 0 15px 0 15px
+  background navigation-color
+  box-shadow 5px 0 25px 0px rgb(0,0,0);
+  border-right 1px solid rgb(0,0,0)
 div#navigation
   text-align left
   padding 5px
-  font-size 125%
-  font-family Molot
-span#navigation
+#navigation_text
+  height 50px
+  a:link
+    color navigation-text-color
+    font-family Molot
+    font-size 150%
+    text-decoration none
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+  a:visited
+    color navigation-text-color
+  a:hover
+    color navigation-text-hover-color
+#navigation_buttons
   position absolute
-  bottom 0
-  background rgb(0,0,0)
+  bottom 25px
   
 #content
   position absolute
+  width 100%
   top 50px
-  left 165px
+  left 161px
+  margin-left 10px 
 #content p
   font-size 250%
   font-family GoodDog
@@ -51,6 +81,7 @@ footer
   bottom 0
   width 100%
   background rgb(255,255,255)
+  border 1px solid rgb(0,0,0)
   padding-left 40%
   font-size 100%
   font-family Molot
@@ -67,6 +98,39 @@ footer
 #footer_inner
   position relative
 
+/*
+ * Index
+ */
+div#column1
+  position fixed
+  height 100
+  width 100
+  left 180
+  top 100
+  border 1px solid rgb(0,0,0)
+div#column2
+  position absolute
+  height 100
+  width 100
+  left 100
+  top 0
+  border 1px solid rgb(0,0,0)
+  
+
+/*
+ * Images
+ */
+
+div#me_picture
+  height 130
+  width 130
+  margin-left 3px
+  margin-top 5px
+  margin-right 3px
+  margin-bottom 10px
+  padding-bottom -5px 
+  border 2px solid rgb(0,0,0)
+  
 /*
  * Fonts
  */
