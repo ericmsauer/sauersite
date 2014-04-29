@@ -23,4 +23,4 @@ app.use(express.static(__dirname + '/public'))
 router.set_routes(app)
 
 app.listen(8080, '0.0.0.0');
-console.log("Server running on http://localhost:8888");
+console.log("Server running on http://localhost:8080");

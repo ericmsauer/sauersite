@@ -3,10 +3,12 @@ global-reset()
 
 // Content
 background-color = rgb(250,250,250)
+content-bar-color = rgb(0,255,0)
+content-bar-text-color = rgb(0,0,0)
 // Navigation
-navigation-color = rgb(125,125,125)
+navigation-color = rgb(155,155,155)
 navigation-text-color = rgb(75,75,75)
-navigation-text-hover-color = rgb(150,150,150)
+navigation-text-hover-color = rgb(175,175,175)
 nav_trans_time = .5s
 footer_trans_time = .5s
 
@@ -14,7 +16,7 @@ html
   height 100%
 
 body
-  overflow-y scroll
+  overflow-y hidden
   overflow-x hidden
   margin 0
   padding 0
@@ -62,19 +64,90 @@ div#navigation
     color navigation-text-color
   a:hover
     color navigation-text-hover-color
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
 #navigation_buttons
   position absolute
   bottom 25px
   
 #content
+  overflow-y scroll
   position absolute
   width 100%
-  top 50px
-  left 161px
+  top 65px
+  left 170px
   margin-left 10px 
 #content p
-  font-size 250%
-  font-family GoodDog
+  font-size 150%
+  font-family Aleo
+div#content_title
+  font-size 180%
+  font-family Aleo-Bold
+#content_bar
+  position relative
+  height 30px
+  width 400px
+  border-style solid
+  border-width 1px
+  font-size 140%
+  font-family Aleo-Italic
+#content_bar_name
+  color content-bar-text-color
+  padding-left 5px
+  padding-top 4px
+  position absolute
+  left 5%
+/*
+ * CONTENT BARS!
+ */
+#content_bar_percent_90
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 90%
+#content_bar_percent_80
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 80%
+#content_bar_percent_70
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 70%
+#content_bar_percent_60
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 60%
+#content_bar_percent_50
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 50%
+#content_bar_percent_40
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 40%
+#content_bar_percent_30
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 30%
+#content_bar_percent_20
+  background-color content-bar-color
+  padding-left 5px
+  padding-top 4px
+  height 26px
+  width 20%
+
 
 footer
   position fixed
@@ -120,7 +193,6 @@ div#column2
 /*
  * Images
  */
-
 div#me_picture
   height 130
   width 130
@@ -129,14 +201,19 @@ div#me_picture
   margin-right 3px
   margin-bottom 10px
   padding-bottom -5px 
-  border 2px solid rgb(0,0,0)
   
 /*
  * Fonts
  */
 @font-face
-  font-family GoodDog
-  src url(/fonts/GoodDog.otf) format('truetype')
+  font-family Aleo
+  src url(/fonts/Aleo-Regular.otf) format('truetype')
+@font-face
+  font-family Aleo-Bold
+  src url(/fonts/Aleo-Bold.otf) format('truetype')
+@font-face
+  font-family Aleo-Italic
+  src url(/fonts/Aleo-Italic.otf) format('truetype')
 @font-face
   font-family Molot
   src url(/fonts/Molot.otf) format('truetype')
