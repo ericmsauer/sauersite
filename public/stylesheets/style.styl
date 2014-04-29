@@ -16,7 +16,6 @@ html
   height 100%
 
 body
-  overflow-y hidden
   overflow-x hidden
   margin 0
   padding 0
@@ -52,6 +51,8 @@ body
 div#navigation
   text-align left
   padding 5px
+#navigation_picture
+  padding 5px
 #navigation_text
   height 50px
   a:link
@@ -68,9 +69,11 @@ div#navigation
 #navigation_buttons
   position absolute
   bottom 25px
-  
+
+/*
+ * GLOBAL CONTENT
+ */ 
 #content
-  overflow-y scroll
   position absolute
   width 100%
   top 65px
@@ -79,9 +82,70 @@ div#navigation
 #content p
   font-size 150%
   font-family Aleo
-div#content_title
+#content_title
   font-size 180%
   font-family Aleo-Bold
+/*
+ * CONTENT FOR INDEX!
+ */
+#index_picture
+ position absolute
+ left 5%
+ top 50px
+#index_title_top
+ position absolute
+ left 35%
+ top 150px
+ color rgb(50,50,50)
+ font-size 300%
+ font-family Villa
+#index_title_bottom
+ position absolute
+ left 35%
+ top 200px
+ color rgb(0,200,100)
+ font-size 300%
+ font-family Villa
+#index_text
+ position absolute
+ left 32%
+ top 250px
+ color rgb(0,0,0) 
+ font-size 160%
+ font-family Aleo-BoldItalic
+/*
+ * CONTENT FOR RESUME PAGE
+ */
+#resume_title_small
+  padding 8px
+  width 80%
+  font-size 140%
+  font-family Aleo-Bold
+#resume_text
+  padding 7px
+  width 90%
+  font-size 80%
+  font-family Aleo
+#resume_text_bold
+  padding 7px
+  width 90%
+  font-size 80%
+  font-family Aleo-Bold
+#resume_text_indent_1
+  padding 7px
+  padding-left 50px
+  width 90%
+  font-size 80%
+  font-family Aleo
+#resume_text_bold_indent_1
+  padding 7px
+  padding-left 50px
+  width 90%
+  font-size 80%
+  font-family Aleo-Bold
+/*
+ * CONTENT FOR ABOUT ME PAGE
+ */
 #content_bar
   position relative
   height 30px
@@ -172,25 +236,6 @@ footer
   position relative
 
 /*
- * Index
- */
-div#column1
-  position fixed
-  height 100
-  width 100
-  left 180
-  top 100
-  border 1px solid rgb(0,0,0)
-div#column2
-  position absolute
-  height 100
-  width 100
-  left 100
-  top 0
-  border 1px solid rgb(0,0,0)
-  
-
-/*
  * Images
  */
 div#me_picture
@@ -215,6 +260,11 @@ div#me_picture
   font-family Aleo-Italic
   src url(/fonts/Aleo-Italic.otf) format('truetype')
 @font-face
+  font-family Aleo-BoldItalic
+  src url(/fonts/Aleo-BoldItalic.otf) format('truetype')
+@font-face
   font-family Molot
   src url(/fonts/Molot.otf) format('truetype')
-
+@font-face
+  font-family Villa
+  src url(/fonts/Villa.ttf) format('truetype')
