@@ -1,33 +1,100 @@
 extends layout
 
 block title
-  div#title_name Resume
+  div#title_name What have I done?
   
 block content
   div#content
-    div#content_title Resume
-    hr
+    br
     a(href='/documents/resume_latest.pdf')
-      p Download
+      p Download Latest Resume
     br
     br
-    div#content_title Giant List of Acheivements (Last Updated 4/22/2014)
-    hr
+    div#resume_title Life Acheivements!
     div#resume_title_small Education
+      hr
       div#resume_text - Uniersity of Illinois Urbana Champaign, IL 61820
       div#resume_text_indent_1 - Major of Study: Mathamatics and computer Science
       div#resume_text - Doughery Valley High School, San Ramon, CA 94582
       div#resume_text - John Hopkins University Center for Talented Youth, MD 21218
       div#resume_text - Digital Media Academy at Stanford University, CA 94305
     div#resume_title_small Employment
-      div#resume_text_bold - Sandia National Laboratories: Center for Cyber Defenders
+      hr
+      div#resume_text_bold Sandia National Laboratories: Center for Cyber Defenders
       div#resume_text_bold_indent_1 Paid Internship (Summer 2012)
       div#resume_text_indent_1 - Developed the Forensic Analysis Repository for Malware System (FARM) which provides computer security experts the ability to automate detection of malware and build a central database for research.
       div#resume_text_indent_1 - Designed new innovative cyber security tools to detect malware in non executable files such as image files, archive files, Microsoft documents, and portable document format (PDF) files.
       div#resume_text_bold_indent_1 Paid Internship (Summer 2011)
       div#resume_text_indent_1 - Designed the Front (user interface) and Back (database & server) End for Sandia's MegaTux Project, a supercomputer used to emulate the Internet and study the behavior of botnets.
     div#resume_title_small Scientific Research
+      hr
       div#resume_text - “PDF Clearance: An Improved Method of Detecting Malicious Embedded JavaScript in Portable Document Files (PDFs) using Syntactic Analysis.”  (2011 - 2012)
       div#resume_text - “Towards the Evolution of Artificial Intelligence: Designing a Human-like AI that can adapt to User Skill Sets and Display Emotions.” (2010 - 2011)
       div#resume_text - “Towards the Evolution of Artificial Intelligence: Simulating Human Decision Making in Video Game Environments.” (2009- 2010)
       div#resume_text - “How can a Stack of Jenga Blocks Extend over an Edge of a Table to Achieve the Maximum Overhang Possible?” (2008 - 2009)
+    div#resume_title_small Programming Competitions
+      hr
+      div#resume_text CS225 Coding Challange 2
+      div#resume_text_indent_1 - Third Place
+      div#resume_text CS225 Coding Challange 4
+      div#resume_text_indent_1 - Third Place
+    div#resume_title_small Science Awards (Precollege)
+      hr 
+      div#resume_text_bolditalic NATIONAL
+      div#resume_text_bold_indent_1 Intel International Science and Engineering Fair 2012
+      div#resume_text_indent_1 - 2012 INTEL ISEF Finalist
+      div#resume_text_indent_1 - Scholarship Award of $60,000 to the Florida Institute of Technology
+      div#resume_text_bold_indent_1 Intel Science Talent Search 2013
+      div#resume_text_indent_1 - Semifinalist (California)
+      div#resume_text_bold_indent_1 National Junior Science and Humanities Symposium 2012
+      div#resume_text_indent_1 - Finalist Paper Presenter representing Northern California/Western JSHS Division 
+      div#resume_text_bold_indent_1 National Junior Science and Humanities Symposium 2011
+      div#resume_text_indent_1 - Student Delegate representing Northern California/Western Nevada JSHS Division 
+      div#resume_text_bold_indent_1 Siemens Competition 2012
+      div#resume_text_indent_1 - Semifinalist (California)
+      div#resume_text_bolditalic STATE 
+      div#resume_text_bold_indent_1 California Legislature Assembly Certificate of Recognition 
+      div#resume_text_indent_1 - For achievements as INTEL ISEF Finalist (2012)
+      div#resume_text_indent_1 - For Excellence in Science - San Ramon Business Roundtable Association (2012)
+      div#resume_text_indent_1 - For Excellence in Science - San Ramon Business Roundtable Association (2011)
+      div#resume_text_bold_indent_1 California State Science Fair 2012
+      div#resume_text_indent_1 - 1st Place Senior Division in Mathematics and Software 
+      div#resume_text_indent_1 - Math Teachers Award for Excellence in Mathematics and Computer Science
+      div#resume_text_bold_indent_1 Delaware Valley Tri State Science Fair 2009
+      div#resume_text_indent_1 - Silver Medalist Albert Einstein Fair
+      div#resume_text_indent_1 - 1st Place in Mathematics
+      div#resume_text_indent_1 - Esther Borish Memorial Fund Award 
+      div#resume_text_bold_indent_1 N. California/W. Nevada Junior Science and Humanities Symposium 2013
+      div#resume_text_indent_1 - Finalist – Top sixteen to present at State JSHS Symposium 
+      div#resume_text_indent_1 - National Finalist to be determined mid March 2013
+      div#resume_text_bold_indent_1 N. California/W. Nevada Junior Science and Humanities Symposium 2012
+      div#resume_text_indent_1 - Finalist – Top sixteen to present at State JSHS Symposium 
+      div#resume_text_indent_1 - National Finalist to present at the 50th National JSHS Symposium
+      div#resume_text_bold_indent_1 N. California/W. Nevada Junior Science and Humanities Symposium 2011
+      div#resume_text_indent_1 - Finalist – Top sixteen to present at State JSHS Symposium 
+      div#resume_text_indent_1 - National Delegate to attend the 49th National JSHS Symposium
+      div#resume_text_bolditalic REGIONAL
+      div#resume_text_bold_indent_1 Contra Costa County Council 2012
+      div#resume_text_indent_1 - Rising Star Award for Outstanding Achievement in Science
+      div#resume_text_bold_indent_1 Contra Costa County Science and Engineering Fair 2012
+      div#resume_text_indent_1 - Grand Sweepstakes Winner in the Senior Division
+      div#resume_text_indent_1 - 1st Place in Senior Division for Mathematics and Software
+      div#resume_text_indent_1 - INTEL Excellence in Computer Science Award  
+      div#resume_text_bold_indent_1 Jersey Shore Science Fair 2009  
+      div#resume_text_indent_1 - 1st Place in the Junior Division for Mathematics 
+      div#resume_text_bold_indent_1 San Ramon Business Roundtable Student Recognition Award 2012
+      div#resume_text_indent_1 - 1st Place in the Science category 
+      div#resume_text_bold_indent_1 San Ramon Business Roundtable Student Recognition Award 2011
+      div#resume_text_indent_1 - 1st Place in the Science category
+      div#resume_text_bold_indent_1 Silicon Valley Engineering Council Award 2013
+      div#resume_text_indent_1 - An award presented to young engineering and technology students for their dedication, focus, and commitment to the field of engineering.
+      div#resume_text_bold_indent_1 Tri Valley Science Fair Lawrence Livermore National Labs 2011
+      div#resume_text_indent_1 - 2nd Place in the Computer Science Category
+      div#resume_text_indent_1 - INTEL Excellence in Computer Science Award  
+      div#resume_text_indent_1 - Office of Naval Research Naval Science Award
+      div#resume_text_indent_1 - Exhibit displayed at Lawrence Livermore National Laboratory Science Museum
+      div#resume_text_bold_indent_1 Tri Valley Science Fair Lawrence Livermore National Labs 2010
+      div#resume_text_indent_1 - 1st Place in the Computer Science Category
+      div#resume_text_indent_1 - INTEL Excellence in Computer Science Award    
+      div#resume_text_indent_1 - National Society of Professional Engineers Innovative Engineering Award
+      div#resume_text_indent_1 - Exhibit displayed at Lawrence Livermore National Laboratory Science Museum

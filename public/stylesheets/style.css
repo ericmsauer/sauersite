@@ -209,9 +209,14 @@ div#navigation {
 /*
  * CONTENT FOR RESUME PAGE
  */
+#resume_title {
+  padding-bottom: 10px;
+  font-size: 180%;
+  font-family: Aleo-Bold;
+}
 #resume_title_small {
   padding: 8px;
-  width: 80%;
+  width: 90%;
   font-size: 140%;
   font-family: Aleo-Bold;
 }
@@ -223,9 +228,17 @@ div#navigation {
 }
 #resume_text_bold {
   padding: 7px;
+  padding-left: 20px;
   width: 90%;
-  font-size: 80%;
+  font-size: 90%;
   font-family: Aleo-Bold;
+}
+#resume_text_bolditalic {
+  padding: 7px;
+  padding-left: 20px;
+  width: 90%;
+  font-size: 90%;
+  font-family: Aleo-BoldItalic;
 }
 #resume_text_indent_1 {
   padding: 7px;
