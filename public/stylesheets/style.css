@@ -207,6 +207,35 @@ div#navigation {
   font-family: Aleo-BoldItalic;
 }
 /*
+ * CONTENT FOR PROJECTS!
+ */
+#project {
+  border-style: solid;
+  border-width: 5px;
+  background: #f5f5f5;
+  width: 930px;
+}
+#project_picture {
+  position: absolute;
+  left: 730px;
+  border-style: solid;
+  border-width: 5px;
+}
+#project_text {
+  padding: 7px;
+  padding-left: 50px;
+  width: 90%;
+  font-size: 110%;
+  font-family: Aleo;
+}
+#project_text_bold {
+  padding: 7px;
+  padding-left: 50px;
+  width: 90%;
+  font-size: 110%;
+  font-family: Aleo-Bold;
+}
+/*
  * CONTENT FOR RESUME PAGE
  */
 #resume_title {
